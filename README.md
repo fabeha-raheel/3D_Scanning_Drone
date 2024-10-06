@@ -1,2 +1,1 @@
-# 3d_scanning_drone
-new
+# ArduPilot 3D Scanning Drone
