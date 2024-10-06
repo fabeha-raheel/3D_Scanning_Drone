@@ -1,0 +1,3 @@
+# Ignore all jpg and jpeg files in datasets
+datasets/**/*.jpg
+datasets/**/*.jpeg
