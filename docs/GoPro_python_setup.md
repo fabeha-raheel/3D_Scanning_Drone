@@ -16,6 +16,12 @@ The code implemented on a PC with Ubuntu 20.04 / Linux.
 
 **Tutorial for setting up GoPro WiFi connection**: https://www.youtube.com/watch?v=5iLR-acPPvA
 
+### Troubleshooting Tips
+
+If the GoPro camera WiFi connection is unavailable on your PC, go to the **GoPro Quik App** and Click on **Enable Preview**. You will be prompted to connect with the camera over WiFi. After this the WiFi connection will also be visible on the PC.
+
+If you want to take a photo or video using the GoPro camera, make sure that the correct mode is selected in the camera via the Quik App.
+
 
 ## Accessing and controlling GoPro camera using Python
 
