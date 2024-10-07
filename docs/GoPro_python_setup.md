@@ -10,9 +10,9 @@ The code implemented on a PC with Ubuntu 20.04 / Linux.
 
 1. Switch on the GoPro camera. Swipe downwards from the top to view the menu. Go to **Preferences** > **Wireless Connections**.
 2. In the **Wireless Connections** menu, ensure that **Wireless Connections** are **On**. Also set the **Wi-fi Band** to **2.4GHz** or **5GHz** depending on your PC requirements.
-3. Then, install the GoPro Quik App on your phone. Create an account or Sign In to register your camera. Make sure that location services and Bluetooth are open on your phone.
+3. Then, install the **GoPro Quik App** on your phone. Create an account or Sign In to register your camera. Make sure that location services and Bluetooth are open on your phone.
 4. When the phone is ready, click on **Connect Device** > **GoPro Quik App** on the GoPro camera. Wait for the devices to Pair.  
-5. Now, you should be able to see a WiFi connection for your GoPro camera in your Network connections. Connect to the camera and proceed with programming.
+5. Now, you should be able to see a WiFi connection for your GoPro camera in your Network connections on your PC. Connect to the camera and proceed with programming.
 
 **Tutorial for setting up GoPro WiFi connection**: https://www.youtube.com/watch?v=5iLR-acPPvA
 
