@@ -2,7 +2,7 @@
 <launch>
 
         <!-- Add Gazebo Model Path -->
-        <env name="GAZEBO_MODEL_PATH" value="$(find sim_droneScanner)/models" />
+        <!-- <env name="GAZEBO_MODEL_PATH" value="$(find sim_droneScanner)/models" /> -->
 
         <!-- overwriting these args -->
         <arg name="debug" default="false" />
@@ -32,5 +32,11 @@
                 <!-- url for sitl -->
                 <arg name="fcu_url" value="udp://127.0.0.1:14551@14555" />  
         </include>
+
+        <!--For generating path of the quadcopter in RVIZ by using Python script  -->
+        <node pkg="sim_droneScanner" type="rviz_traj.py" name="Generating_Trajectory" output="screen" ></node>
+
+        <!--To start RVIZ-->
+        <node type="rviz" name="rviz" pkg="rviz" args="-d $(find sim_droneScanner)/rviz/rviz_for_ardupilot.rviz" />
         
 </launch>

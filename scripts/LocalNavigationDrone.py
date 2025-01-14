@@ -24,7 +24,7 @@ class LocalNavigationDrone:
     def start_local_circle_mission(self, radius=5, n_waypoints=10, center_angle=0):
 
         initial_position = (self.vehicle.data.local_position.x, self.vehicle.data.local_position.y)
-        self.waypoints, circle_center = drone.generate_circular_traj_waypoints(radius, n_waypoints, initial_position, center_angle)
+        self.waypoints, circle_center = self.generate_circular_traj_waypoints(radius, n_waypoints, initial_position, center_angle)
         print("Waypoints:")
         print(self.waypoints)
 
