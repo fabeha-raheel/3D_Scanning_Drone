@@ -21,7 +21,7 @@ class LocalNavigationDrone:
 
         self.waypoints = None
 
-    def start_local_circle_mission(self, radius=5, n_waypoints=10, center_angle=0):
+    def start_local_circle_mission(self, altitude=5, radius=5, n_waypoints=10, center_angle=0):
 
         initial_position = (self.vehicle.data.local_position.x, self.vehicle.data.local_position.y)
         self.waypoints, circle_center = self.generate_circular_traj_waypoints(radius, n_waypoints, initial_position, center_angle)
@@ -29,12 +29,12 @@ class LocalNavigationDrone:
         print(self.waypoints)
 
         for waypoint in self.waypoints:
-            self.vehicle.goto_position_local(x=waypoint[0], y=waypoint[1], z=self.vehicle.data.local_position.z)
+            self.vehicle.goto_position_local(x=waypoint[0], y=waypoint[1], z=altitude)
             time.sleep(5)
 
-        print("Mission completed.")
+        print("Loop completed.")
 
-        self.vehicle.set_mode(mode="LAND")
+        # self.vehicle.set_mode(mode="LAND")
 
 
     def execute_takeoff_sequence(self, takeoff_alt=None):
