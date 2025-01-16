@@ -47,8 +47,8 @@ class LocalNavigationDrone:
         else:
             rospy.loginfo("Drone cannot be switched to GUIDED.")
         
-        # self.vehicle.set_stream_rate()
-        # rospy.loginfo("Mode is now GUIDED.")
+        self.vehicle.set_stream_rate()
+        rospy.loginfo("Mode is now GUIDED.")
 
         # self.vehicle.wait_for_GPS_Fix()       # check if vehicle has GPS Fix
             
